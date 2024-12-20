@@ -1,0 +1,73 @@
+export const data = [
+  {
+    question: "What is React?",
+    option1: "It is a library of JS",
+    option2: "It is a markup language",
+    option3: "It is Object oriented language",
+    option4: "None",
+  },
+  {
+    question: "Which company maintains React?",
+    option1: "Google",
+    option2: "Facebook (Meta)",
+    option3: "Microsoft",
+    option4: "Apple",
+  },
+  {
+    question: "What is JSX?",
+    option1: "A syntax extension for JavaScript",
+    option2: "A templating language",
+    option3: "A style framework",
+    option4: "A database query language",
+  },
+  {
+    question: "What is the default method to create a component in React?",
+    option1: "Class component",
+    option2: "Function component",
+    option3: "Both class and function components",
+    option4: "Arrow function component",
+  },
+  {
+    question: "Which hook is used to handle side effects in React?",
+    option1: "useState",
+    option2: "useEffect",
+    option3: "useReducer",
+    option4: "useMemo",
+  },
+  {
+    question: "What does the `setState` function do in React?",
+    option1: "Renders the component",
+    option2: "Updates the state of a component",
+    option3: "Handles component events",
+    option4: "None of the above",
+  },
+  {
+    question: "What is a key used for in a React list?",
+    option1: "To identify unique elements in a list",
+    option2: "To access the value of an element",
+    option3: "To store the index of an element",
+    option4: "To define element styles",
+  },
+  {
+    question: "Which of the following is true about React?",
+    option1: "React follows a two-way binding approach",
+    option2: "React works on a one-way data flow model",
+    option3: "React uses XML for its structure",
+    option4: "React does not support component-based architecture",
+  },
+  {
+    question: "What is the purpose of Redux in React applications?",
+    option1: "To manage application state",
+    option2: "To handle API requests",
+    option3: "To design the UI",
+    option4: "To add animations",
+  },
+  {
+    question:
+      "Which React hook is used for managing state in a functional component?",
+    option1: "useState",
+    option2: "useEffect",
+    option3: "useRef",
+    option4: "useCallback",
+  },
+];
