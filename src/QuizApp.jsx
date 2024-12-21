@@ -70,30 +70,30 @@ export default function QuizApp() {
         <h3>
           {index + 1}) {data[index].question}
         </h3>
-
-        <ul>
-          <li
-            className={option === "option1" ? "selected" : ""}
-            onClick={() => handleSelect("option1")}>
-            {data[index].option1}
-          </li>
-          <li
-            className={option === "option2" ? "selected" : ""}
-            onClick={() => handleSelect("option2")}>
-            {data[index].option2}
-          </li>
-          <li
-            className={option === "option3" ? "selected" : ""}
-            onClick={() => handleSelect("option3")}>
-            {data[index].option3}
-          </li>
-          <li
-            className={option === "option4" ? "selected" : ""}
-            onClick={() => handleSelect("option4")}>
-            {data[index].option4}
-          </li>
-        </ul>
-
+        <div className="container">
+          <ul>
+            <li
+              className={option === "option1" ? "selected" : ""}
+              onClick={() => handleSelect("option1")}>
+              {data[index].option1}
+            </li>
+            <li
+              className={option === "option2" ? "selected" : ""}
+              onClick={() => handleSelect("option2")}>
+              {data[index].option2}
+            </li>
+            <li
+              className={option === "option3" ? "selected" : ""}
+              onClick={() => handleSelect("option3")}>
+              {data[index].option3}
+            </li>
+            <li
+              className={option === "option4" ? "selected" : ""}
+              onClick={() => handleSelect("option4")}>
+              {data[index].option4}
+            </li>
+          </ul>
+          </div>
         <div>
           {index === 0 ? "" : <button onClick={handlePrev}>Previous</button>}
 

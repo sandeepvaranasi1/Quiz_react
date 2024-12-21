@@ -14,6 +14,20 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+}
+
+.quiz h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #694f8e;
+  text-align: center;
+}
+
+.quiz ul {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
 }
 
 .quiz ul li {
@@ -25,17 +39,20 @@ body {
   margin-bottom: 10px;
   cursor: pointer;
   background-color: #ece7e6;
-  width: 500px;
+  width: 100%; /* Make it responsive */
+  transition: all 0.3s ease; /* Smooth hover effect */
 }
 
 .quiz ul li:hover {
   background-color: #8255c1c3;
   color: white;
+  transform: scale(1.02); /* Add a slight zoom effect */
 }
 
 .quiz ul li.selected {
   background-color: #694f8e;
   color: white;
+  box-shadow: 0 0 10px rgba(231, 231, 231, 0.904); /* Highlight selected item */
 }
 
 .quiz button {
@@ -46,6 +63,9 @@ body {
   background-color: aliceblue;
   border: 2px solid rgb(63, 63, 63);
   color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Smooth hover effect */
 }
 
 .quiz button:hover {
@@ -53,6 +73,7 @@ body {
   border: 2px solid rgb(255, 255, 255);
   color: rgb(255, 255, 255);
   cursor: pointer;
+  transform: scale(1.05); /* Add a slight zoom effect */
 }
 
 .quiz button:disabled {
@@ -60,4 +81,12 @@ body {
   border: 2px solid rgba(63, 63, 63, 0.654);
   color: rgba(0, 0, 0, 0.529);
   cursor: no-drop;
+  opacity: 0.7;
+}
+
+.quiz footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #694f8e;
+  text-align: center;
 }
