@@ -93,7 +93,7 @@ export default function QuizApp() {
               {data[index].option4}
             </li>
           </ul>
-          </div>
+        </div>
         <div>
           {index === 0 ? "" : <button onClick={handlePrev}>Previous</button>}
 
@@ -110,8 +110,9 @@ export default function QuizApp() {
 
   return (
     <div className="quiz">
-      <h1>Lets Start the Quiz...!</h1>
-      <h2>Total questions are : {data.length}</h2>
+      <h1>Quizzy</h1>
+      <h2>Lets Start the Quiz...!</h2>
+      <h2>Total questions : {data.length}</h2>
       <button onClick={() => handleStart(true)}>Start</button>
     </div>
   );
